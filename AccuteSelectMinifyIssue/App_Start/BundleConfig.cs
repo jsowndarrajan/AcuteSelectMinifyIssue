@@ -9,11 +9,9 @@ namespace AccuteSelectMinifyIssue
     public class BundleConfig
     {
         public static void RegisterBundles(BundleCollection bundles)
-        {
-             //bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-             //       "~/Scripts/jquery-{version}.js"));        
+        {   
 
-            bundles.Add(new ScriptBundle("~/bundles/vendor").Include(
+            /*bundles.Add(new ScriptBundle("~/bundles/vendor").Include(
                    "~/Scripts/vendor/angular/angular.js",
                    "~/Scripts/vendor/acute.select/acute.select.js"
                    ));
@@ -22,7 +20,7 @@ namespace AccuteSelectMinifyIssue
                    "~/App/MainCtrl.js"));
 
             bundles.Add(new StyleBundle("~/bundles/styles").Include(
-                   "~/Scripts/vendor/acute.select/acute.select.css"));
+                   "~/Scripts/vendor/acute.select/acute.select.css"));*/
 
         }
     }
