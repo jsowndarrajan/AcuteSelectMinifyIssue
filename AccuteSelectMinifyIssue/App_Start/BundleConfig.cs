@@ -14,7 +14,7 @@ namespace AccuteSelectMinifyIssue
              //       "~/Scripts/jquery-{version}.js"));        
 
             bundles.Add(new ScriptBundle("~/bundles/vendor").Include(
-                   "~/Scripts/angular/angular.js",
+                   "~/Scripts/vendor/angular/angular.js",
                    "~/Scripts/vendor/acute.select/acute.select.js"
                    ));
 
