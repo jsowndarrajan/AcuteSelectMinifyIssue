@@ -4,21 +4,31 @@
     var app = angular.module('app', ["acute.select"]);
 
     app.controller('mainCtrl', ['$scope', function ($scope) {
-        $scope.title = "Acute select minification issue";
+        $scope.title = "Acute select";
+        
+        $scope.selectedMonth = {};
 
-        $scope.selectedState = '';
-
-        $scope.getAllStates = function (callback) {
-            callback($scope.allStates);
+        $scope.getAllMonths = function (callback) {
+            callback($scope.allMonths);
         };
 
-        $scope.stateSelected = function (state) {
-            $scope.stateInfo = state.name + " (" + state.id + ")";
+        $scope.monthSelected = function (month) {
+            $scope.stateInfo = month.name + " (" + month.id + ")";
         }
 
-        $scope.allStates = [
-            { "name": "Alabama", "id": "AL" },
-            { "name": "Alaska", "id": "AK" }
+        $scope.allMonths = [
+            { name: "January", id: 1},
+            { name: "February", id: 2},
+            { name: "March", id: 3},
+            { name: "April", id: 4},
+            { name: "May", id: 5},
+            { name: "June", id: 6},
+            { name: "July", id: 7},
+            { name: "August", id: 8},
+            { name: "September", id: 9},
+            { name: "October", id: 10},
+            { name: "November", id: 11},
+            { name: "December", id: 12}           
         ];
     }]);
 

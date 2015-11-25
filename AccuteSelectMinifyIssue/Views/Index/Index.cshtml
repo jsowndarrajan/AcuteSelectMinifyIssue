@@ -9,13 +9,11 @@
     <link href="~/Scripts/vendor/acute.select/acute.select.css" rel="stylesheet" />
 </head>   
 <body>
-    <h2>Index Page</h2>
-
     <div ng-app="app">
         <div ng-controller="mainCtrl">
-            <h2>{{title}}</h2> <br/>
-            <select class="ac-select stateList" ac-model="selectedState" ac-options="s.name for s in allStates"
-                    ac-settings="{ comboMode: true, loadOnOpen: true, minWidth: '300px' }" ac-change="stateSelected(value)"></select>
+            <h2>{{title}}</h2> <br/>            
+            <select class="ac-select stateList" ac-model="monthSelected" ac-options="month.name for month in getAllMonths()"
+                    ac-settings="{ comboMode: true, loadOnOpen: true, minWidth: '300px' }" ac-change="monthSelected(value)" ac-placeholder="Select Month"></select>
         </div>
     </div>
 </body>

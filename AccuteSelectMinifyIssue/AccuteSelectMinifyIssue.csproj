@@ -131,6 +131,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="App\MainCtrl.js" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\vendor\acute.select\images\dropdown.gif" />
     <Content Include="Scripts\vendor\angular\angular.js" />
     <Content Include="Scripts\vendor\acute.select\acute.select.css" />
     <Content Include="Scripts\vendor\acute.select\acute.select.html" />
